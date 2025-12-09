@@ -7,25 +7,6 @@
 A simple and clean Weather Application built using HTML, CSS, and JavaScript.  
 It provides real-time weather information using the WeatherAPI service.
 
----
-
-## 📸 Screenshots
-
-### 🌤️ Home Screen (Light Mode)
-![Light Mode Screenshot](screenshots/light-mode.png)
-
-### 🌙 Dark Mode
-![Dark Mode Screenshot](screenshots/dark-mode.png)
-
-### 📍 Geolocation Weather Fetch
-![Geolocation Screenshot](screenshots/geolocation.png)
-
-### 🔍 Search Weather by City
-![Search Screenshot](screenshots/search.png)
-
-> **Note:**  
-Create a folder named **screenshots** in your project and place your images there with the same names  
-(or change the names in the README according to your files).
 
 ---
 

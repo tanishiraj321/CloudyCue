@@ -1,0 +1,88 @@
+:root {
+  --bg-light: #f0f8ff;
+  --bg-dark: #1e1e1e;
+  --text-light: #000;
+  --text-dark: #fff;
+  --card-bg-light: #fff;
+  --card-bg-dark: #333;
+  --btn-color: #1e90ff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.weather-container {
+  background: var(--card-bg-light);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  transition: background 0.3s;
+}
+
+.dark-mode .weather-container {
+  background: var(--card-bg-dark);
+}
+
+input {
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.3rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.result {
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+}
+
+.toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 480px) {
+  .weather-container {
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+}
